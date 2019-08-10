@@ -6,6 +6,7 @@
 ## Table of Contents
 - [Install](#install)
 - [Introduction](#introduction)
+- [Recommendation](#recommendation)
 
 ## Install
 
@@ -16,7 +17,7 @@ Before installing, [download and install Node.js](https://nodejs.org/en/download
 Installation is done using the [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```sh
-$ npm install scalapay
+$ npm i scalapay
 ```
 
 ## Introduction
@@ -39,6 +40,28 @@ scala.testAccess(function(error, result) {
 		console.log(result);
 });
 ```
+
+
+## Recommendation
+
+Create a config file named /config/ScalaAPI.js
+
+```js
+var scalapay = require('scalapay');
+
+var Scala = scalapay.login({ 
+  token: "MERCHANT_TOKEN" 
+});
+
+module.exports = Scala;
+```
+
+now you can use it in your other js files
+```js
+const scala = require('./config/ScalaAPI');
+```
+
+
 
 [npm-url]: https://npmjs.org/package/scalapay
 [npm-version-image]: https://badgen.net/npm/v/scalapay
