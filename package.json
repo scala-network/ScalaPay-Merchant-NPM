@@ -1,6 +1,6 @@
 {
   "name": "scalapay",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ScalaPay Merchant Endpoint NodeJS Module",
   "main": "index.js",
   "scripts": {
