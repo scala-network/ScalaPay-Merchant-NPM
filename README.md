@@ -59,6 +59,27 @@ module.exports = Scala;
 now you can use it in your other js files
 ```js
 const scala = require('./config/ScalaAPI');
+
+scala.testAccess(function(error, result) {
+	if(error){
+		console.log(error);
+	else
+		console.log(result);
+});
+
+scala.generateAddress(function(error, result) {
+	if(error){
+		console.log(error);
+	else
+		console.log(result);
+});
+
+scala.transfer("philip119@gmx.de","1337", function(error, result) {
+	if(error){
+		console.log(error);
+	else
+		console.log(result);
+});
 ```
 
 
