@@ -40,5 +40,5 @@ scala.testAccess(function(error, result) {
 });
 ```
 
-[npm-url]: https://npmjs.org/package/mysql
+[npm-url]: https://npmjs.org/package/scalapay
 [npm-version-image]: https://badgen.net/npm/v/scalapay
