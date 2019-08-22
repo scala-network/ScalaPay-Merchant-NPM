@@ -82,7 +82,5 @@ scala.transfer("philip119@gmx.de","1337", function(error, result) {
 });
 ```
 
-
-
 [npm-url]: https://npmjs.org/package/scalapay
 [npm-version-image]: https://badgen.net/npm/v/scalapay
